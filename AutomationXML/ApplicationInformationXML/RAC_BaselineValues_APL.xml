@@ -1,0 +1,6 @@
+<Environment>
+	<Variable>
+		<Name>BaselineTemplate_TCDefaultBaselineProcess</Name>
+		<Value>TC Default Baseline Process</Value>
+   </Variable>
+</Environment>

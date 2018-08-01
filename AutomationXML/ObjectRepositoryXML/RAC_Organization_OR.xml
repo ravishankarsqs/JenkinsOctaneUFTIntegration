@@ -1,0 +1,7 @@
+<Environment>
+	<Variable Name="jtree_OrganizationTree">JavaWindow("jwnd_Organization").JavaApplet("japt_JavaApplet").JavaTree("jtree_OrganizationTree")</Variable>	
+</Environment>
+
+
+
+ 

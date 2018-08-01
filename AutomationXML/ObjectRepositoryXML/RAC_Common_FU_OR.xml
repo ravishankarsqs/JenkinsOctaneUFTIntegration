@@ -1,0 +1,15 @@
+<Environment>
+	<Variable Name="jwnd_DefaultWindow">JavaWindow("jwnd_DefaultWindow")</Variable>	
+	<Variable Name="jwnd_NewFolder">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_NewFolder")</Variable>
+	<Variable Name="jwnd_OpenPerspective">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_OpenPerspective")</Variable>	
+	<Variable Name="jwnd_RefreshWindow">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_RefreshWindow")</Variable>	
+	<Variable Name="jwnd_ResetPerspective">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_ResetPerspective")</Variable>	
+	<Variable Name="jwnd_TcDefaultApplet">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_TcDefaultApplet")</Variable>	
+	<Variable Name="jwnd_UserSettings">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_UserSettings")</Variable>		
+	<Variable Name="jdlg_Properties">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_Properties")</Variable>	
+	<Variable Name="jdlg_Properties@2">JavaWindow("jwnd_DefaultWindow").JavaApplet("japt_JavaApplet").JavaDialog("jdlg_Properties")</Variable>
+	<Variable Name="jwnd_NewItem">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_NewItem")</Variable>
+	<Variable Name="jtee_LOVTree">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_NewItem").JavaWindow("jwnd_LOVTreeShell").JavaTree("jtree_LOVTree")</Variable>
+	<Variable Name="jdlg_NewPart">JavaDialog("jdlg_NewPart")</Variable>
+	<Variable Name="jdlg_NewDesign">JavaDialog("jdlg_NewDesign")</Variable>
+</Environment>

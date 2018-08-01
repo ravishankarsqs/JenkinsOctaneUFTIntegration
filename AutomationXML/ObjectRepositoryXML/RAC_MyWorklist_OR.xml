@@ -1,0 +1,13 @@
+<Environment>
+	<Variable Name="jtree_MyWorkListTree">JavaWindow("jwnd_MyWorkListWindow").JavaTree("jtree_MyWorkListTree")</Variable>
+	<Variable Name="jwnd_TcDefaultApplet">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet")</Variable>
+	<Variable Name="jdlg_PerformDoTask">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_PerformDoTask")</Variable>
+	<Variable Name="jdlg_SignoffDecision">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_SignoffDecision")</Variable>
+	<Variable Name="jdlg_PerformSignoff">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_PerformSignoff")</Variable>
+	<Variable Name="jdlg_DelegateSignoff">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_DelegateSignoff")</Variable>
+	<Variable Name="jdlg_PerformConditionTask">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_PerformConditionTask")</Variable>
+	<Variable Name="jdlg_ResourcePoolSubscription">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_ResourcePoolSubscription")</Variable>
+	<Variable Name="jdlg_ExtensionForm">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_ExtensionForm")</Variable>	
+	<Variable Name="japt_MyWorkListApplet">JavaWindow("jwnd_MyWorkListWindow").JavaApplet("japt_MyWorkListApplet")</Variable> 
+	<Variable Name="jdlg_AssignResponsibleParty">JavaWindow("jwnd_MyWorkListWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_AssignResponsibleParty")</Variable> 
+</Environment>

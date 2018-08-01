@@ -1,0 +1,82 @@
+-----------------------------------------------------------------------------------------------
+Setup Details
+-----------------------------------------------------------------------------------------------
+Teamcenter Release		 - 
+Teamcenter Build		 - 
+Tester Name				 - dhakarem
+
+
+-----------------------------------------------------------------------------------------------
+Test Case Information
+-----------------------------------------------------------------------------------------------
+Feature				 - 
+Category			 - 
+TestCase			 - TC_CreateItem
+Test Run Date		 - June/27/2018
+Test Run Time		 - 11:56:32
+
+
+-----------------------------------------------------------------------------------------------
+Test Script Logs
+-----------------------------------------------------------------------------------------------
+
+
+ [ 11:56:32 ]  -  QTP [ FMW_Setup_TestcaseInit [FMW_Setup_TestcaseInit] ] - Start
+-----------------------------------------------------------------------------------------------
+Step No. : 1
+Description : Login to Teamcenter with any of the following Roles:Engineer,Designer, Engineering Manager,Material Technical Advisor  Note: Only above roles can create a GET Document Itemt.
+Expected Result : Logged into Teamcenter Successfully..
+-----------------------------------------------------------------------------------------------
+11:58:17 - Action - PASS [ 1 ] | Successfully logged into Teamcenter with user [ infodba ]
+-----------------------------------------------------------------------------------------------
+Step No. : 2
+Description : In the My Teamcenter perspective, Select the desired folder to create new GET Document.Create Document Item using File-> New-> Item Menu.
+Expected Result : New part dialog should be displayed
+-----------------------------------------------------------------------------------------------
+11:58:24 - Action - PASS [ 2 ] | Successfully selected menu [ Window:Open Perspective:Other.* ]
+11:58:25 - Action - PASS [ 2 ] | Successfully set perspective [ My Teamcenter ]
+11:58:42 - Action - PASS [ 2 ] | Successfully selected menu [ Window:Reset Perspective.* ]
+11:58:45 - Action - PASS [ 2 ] | Successfully reset perspective
+-----------------------------------------------------------------------------------------------
+Step No. : 3
+Description : Select GET Document from the list. Click on Next Button.
+Expected Result : GET Document Item details window should be displayed.
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Step No. : 4
+Description : User enters Item id ( Acquired from Item ID tool from Control Card) in the ID field. Enter all the mandatory values : Name, IP Classifciation etc
+Expected Result : All mandatory fields should be populated.
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Step No. : 5
+Description : Click on Finish button to complete creation of GET Document item.
+Expected Result : GET Document item should be created in selected folder.
+-----------------------------------------------------------------------------------------------
+11:58:50 - Action - PASS [ 5 ] | Successfully expanded [ Folder ] [ Home~AutomatedTest ]  from navigation tree
+11:58:54 - Action - PASS [ 5 ] | Successfully Selected [ Folder ] [ Home~AutomatedTest ] from navigation tree
+11:59:00 - Action - PASS [ 5 ] | Successfully selected menu [ File:New:Folder... ]
+11:59:13 - Action - PASS [ 5 ] | Successfully created folder [ TCCreateItem_43512 ] of type [ Folder ]
+11:59:14 - Action - PASS [ 5 ] | Successfully created test case folder [ TCCreateItem_43512 ] under [ Home~AutomatedTest ] folder
+11:59:19 - Action - PASS [ 5 ] | Successfully Selected [ Folder ] [ Home~AutomatedTest~TCCreateItem_43512 ] from navigation tree
+11:59:22 - Action - PASS [ 5 ] | Successfully expanded [ Folder ] [ Home~AutomatedTest~TCCreateItem_43512 ]  from navigation tree
+11:59:26 - Action - PASS [ 5 ] | Successfully Selected [ Folder ] [ Home~AutomatedTest~TCCreateItem_43512 ] from navigation tree
+11:59:34 - Action - PASS [ 5 ] | Successfully selected menu [ File:New:Item... ]
+11:59:54 - Action - PASS [ 5 ] | Successfully created item of type [ Item ] with Item Id [ 003097 ] , Item Revision Id [ A ] and Item name [ AUT_Item43642 ]
+-----------------------------------------------------------------------------------------------
+Step No. : 6
+Description : Search for the GET Document created in previous test scipt.
+Expected Result : GET Document selected and opened in new window
+-----------------------------------------------------------------------------------------------
+11:59:57 - Action - PASS [ 6 ] | Successfully expanded [ Item ] [ Home~AutomatedTest~TCCreateItem_43512~003097-AUT_Item43642 ]  from navigation tree
+11:59:59 - Verify - PASS [ 6 ] | VP 1 - Successfully verified [ Item Revision ] [ Home~AutomatedTest~TCCreateItem_43512~003097-AUT_Item43642~003097/A;1-AUT_Item43642 ] exist
+-----------------------------------------------------------------------------------------------
+Step No. : 7
+Description : Logout from Teamcenter
+Expected Result : Logged out successfully.
+-----------------------------------------------------------------------------------------------
+12:00:05 - Action - PASS [ 7 ] | Successfully clicked on toolbar button [ Back ]
+[12:00:43] - QTP [FMW_Setup_TestcaseExit [FMW_Setup_TestcaseExit]] - End
+-----------------------------------------------------------------------------------------------
+[12:00:43] - Final - Pass | Test Execution Result: PASS
+[12:00:43] - Final - Pass | Test Execution Total Time : [ 4 ] Minute [ 12 ] Seconds
+-----------------------------------------------------------------------------------------------

@@ -1,0 +1,18 @@
+<Environment>
+	<Variable>
+		<Name>Newstuff Folder</Name>
+		<Value>Folder</Value>
+	</Variable>
+	<Variable>
+		<Name>Folder</Name>
+		<Value>Folder</Value>
+	</Variable>
+	<Variable>
+		<Name>Item</Name>
+		<Value>Item</Value>
+	</Variable>
+	<Variable>
+		<Name>Item Revision</Name>
+		<Value>Item Revision</Value>
+	</Variable>	
+</Environment>

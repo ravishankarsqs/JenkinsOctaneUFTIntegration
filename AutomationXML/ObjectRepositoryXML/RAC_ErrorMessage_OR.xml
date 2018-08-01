@@ -1,0 +1,13 @@
+<Environment>
+	<Variable Name="jdlg_ErrorDialog">JavaWindow("jwnd_ErrorDefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_ErrorDialog")</Variable>
+	<Variable Name="jdlg_ErrorDialog@2">JavaWindow("jwnd_ErrorDefaultWindow").JavaApplet("japt_TcDefaultApplet").JavaDialog("jdlg_ErrorDialog")</Variable>
+	<Variable Name="jdlg_ErrorDialog@3">JavaDialog("jdlg_ErrorDialog")</Variable>
+	<Variable Name="wdlg_ErrorDialog">JavaWindow("jwnd_ErrorDefaultWindow").Dialog("wdlg_ErrorDialog")</Variable>
+	<Variable Name="jdlg_Delete">JavaWindow("jwnd_ErrorDefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_Delete")</Variable>
+	<Variable Name="jdlg_Delete@2">JavaWindow("jwnd_ErrorDefaultWindow").JavaApplet("japt_TcDefaultApplet").JavaDialog("jdlg_Delete")</Variable>
+	<Variable Name="jdlg_Observation">JavaWindow("jwnd_ErrorDefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_Observation")</Variable>	
+	<Variable Name="jwnd_ErrorWindow">JavaWindow("jwnd_ErrorDefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaWindow("jwnd_ErrorWindow")</Variable>
+	<Variable Name="jwnd_ErrorWindow@2">JavaWindow("jwnd_ErrorDefaultWindow").JavaApplet("japt_TcDefaultApplet").JavaWindow("jwnd_ErrorWindow")</Variable>
+	<Variable Name="jwnd_ErrorWindow@3">JavaWindow("jwnd_ErrorDefaultWindow").JavaWindow("jwnd_ErrorWindow")</Variable>	
+</Environment>
+

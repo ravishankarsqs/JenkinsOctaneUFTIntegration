@@ -1,0 +1,10 @@
+<Environment>
+	<Variable Name="jwnd_MyTeamcenter">JavaWindow("jwnd_MyTeamcenter")</Variable>
+	<Variable Name="jtree_ComponentTree">JavaWindow("jwnd_MyTeamcenter").JavaTree("jtree_ComponentTree")</Variable>
+	<Variable Name="jtree_NavigationTree">JavaWindow("jwnd_MyTeamcenter").JavaTree("jtree_NavigationTree")</Variable>
+	<Variable Name="wmnu_ContextMenu">JavaWindow("jwnd_MyTeamcenter").WinMenu("wmnu_ContextMenu")</Variable>
+	<Variable Name="jtbl_Details">JavaWindow("jwnd_MyTeamcenter").JavaTable("jtbl_Details")</Variable>	
+</Environment>
+
+
+ 

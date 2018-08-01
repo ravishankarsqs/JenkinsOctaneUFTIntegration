@@ -1,0 +1,180 @@
+<Environment>
+	<!--To close perspective in Teamcenter-->
+	<Variable Name="FileClose">File:Close</Variable>
+	<!--To open New Folder Dialog-->
+	<Variable Name="FileNewFolder">File:New:Folder...</Variable>
+	<!--To Open Save Dialog to save any assembly or structure-->
+	<Variable Name="FileSave">File:Save</Variable>
+	<!--To Open Search View-->
+	<Variable Name="WindowShowViewSearch">Window:Show View:Search</Variable>
+	<!--To Pack selected Item Revisions with same find number-->
+	<Variable Name="ViewPack">View:Pack</Variable>
+	<!--To unpack selected Item Revisions with same find number-->
+	<Variable Name="ViewUnpack">View:Unpack</Variable>
+	<!--To unpack All Item Revisions with same find number-->
+	<Variable Name="ViewUnpackAll">View:Unpack All</Variable>	
+	<!--To Pack All Item Revisions with same find number-->
+	<Variable Name="ViewPackAll">View:Pack All</Variable>
+	<!--To Start Trace Link between items-->
+	<Variable Name="StartTraceLink">Tools:Trace Link:Start Trace Link</Variable>	
+	<!--To End Trace Link between items-->
+	<Variable Name="EndTraceLink">Tools:Trace Link:End Trace Link</Variable>
+	<!--To cut selected Teamcenter object(Item/Dataset etc)-->
+	<Variable Name="EditCut">Edit:Cut</Variable>
+	<!--To Paste Teamcenter object(Item/Dataset etc) under selected node-->
+	<Variable Name="EditPaste">Edit:Paste</Variable>
+	<!--To Paste Teamcenter object(Item/Dataset etc) under selected node with specific relation-->
+	<Variable Name="EditPasteSpecial">Edit:Paste Special...</Variable>
+	<!--To Copy selected Teamcenter object(Item/Dataset etc) -->
+	<Variable Name="EditCopy">Edit:Copy</Variable>
+	<!--To Toggle on or off In-Context Mode -->
+	<Variable Name="ToggleInContextMode">Edit:Toggle In-Context Mode</Variable>
+	<!--To open Revise Dialog to revise Item Revision -->
+	<Variable Name="FileRevise">File:Revise...</Variable>
+		<!--To open New Item Dialog to Create Item -->
+	<Variable Name="FileNewItem">File:New:Item...</Variable>
+		<!--To open Properties dialog to view Properties-->
+	<Variable Name="ViewProperties">View:Properties</Variable>
+		<!--To open User Setting dialog to change User Settings.-->
+	<Variable Name="EditUserSetting">Edit:User Setting...</Variable>
+		<!--To open New Change dialog to create Change.-->
+	<Variable Name="FileNewChange">File:New:Change...</Variable>
+		<!--To open New Process Dialog(Workflow Process) to Assign workflow to Item.-->
+	<Variable Name="FileNewWorkflowProcess">File:New:Workflow Process...</Variable>
+		<!--To open Save As dialog to Save as item with New ID.-->
+	<Variable Name="FileSaveAs">File:Save As</Variable>
+		<!--To Refresh Teamcenter Window-->
+	<Variable Name="ViewRefreshWindow">View:Refresh Window</Variable>
+		<!--To open Edit Properties dialog to Edit Properties of selected Teamcenter object-->
+	<Variable Name="EditProperties">Edit:Properties</Variable>
+		<!--To New Part Dialog to create New Part-->
+	<Variable Name="FileNewPart">File:New:Part...</Variable>
+		<!--To Show or Hide Data Panel-->
+	<Variable Name="ViewShowHideDataPanel">View:Show/Hide Data Panel</Variable>
+		<!--To Refresh selected Teamcenter Object-->
+	<Variable Name="ViewRefresh">View:Refresh</Variable>
+		<!--To open Options Dialog to set/reset Preferences-->
+	<Variable Name="EditOption">Edit:Options...</Variable>
+		<!--To open Revision Rules Dialog to create new or modify already crated Revision rule-->
+	<Variable Name="ToolsRevisionRuleCreateEdit">Tools:Revision Rule:Create/Edit...</Variable>
+		<!--To open Configure Variants dialog to configure variants-->
+	<Variable Name="ToolVariantsConfigureVariants">Tools:Variants:Configure Variants...</Variable>
+		<!--To exit from teamcenter application-->
+	<Variable Name="FileExit">File:Exit</Variable>
+		<!--To checkout Item/ dataset-->
+	<Variable Name="ToolsCheckOut">Tools:Check-In/Out:Check Out...</Variable>
+		<!--To Cancel checkout operation-->
+	<Variable Name="ToolsCancelCheckOut">Tools:Check-In/Out:Cancel Checkout...</Variable>
+		<!--To check In Item/ dataset-->
+	<Variable Name="ToolsCheckIn">Tools:Check-In/Out:Check In...</Variable>
+		<!--To Delete Item-->		
+	<Variable Name="EditDelete">Edit:Delete</Variable>
+		<!--To open New Dataset dialog to create New dataset-->	
+	<Variable Name="FileNewDataset">File:New:Dataset...</Variable>
+		<!--To replace Item/dataset-->	
+	<Variable Name="EditReplace">Edit:Replace</Variable>
+	<Variable Name="EditReplace...">Edit:Replace...</Variable>
+		<!--To Open Item-->	
+	<Variable Name="FileOpen">File:Open</Variable>
+		<!--To expand structure-->	
+	<Variable Name="ViewExpandOptionsExpand">View:Expand Options:Expand</Variable>
+		<!--To set Revision Effectivity-->	
+	<Variable Name="ViewEffectivityRevisionEffectivity">View:Effectivity:Revision Effectivity...</Variable>
+		<!--To open Properties panel-->
+	<Variable Name="WindowShowViewProperties">Window:Show View:Properties</Variable>
+		<!--To set/ apply revision rule to current loaded structure-->
+	<Variable Name="ToolsRevisionRuleViewSetCurrent">Tools:Revision Rule:View/Set Current</Variable>
+		<!--To create Item of different types-->
+	<Variable Name="FileNewOther">File:New:Other...</Variable>
+		<!--To open Collapse expanded structure-->
+	<Variable Name="ViewCollapseBelow">View:Collapse Below</Variable>
+		<!--To create duplicate strcuture-->
+	<Variable Name="FileDuplicate">File:Duplicate...</Variable>
+		<!--To create New Form-->
+	<Variable Name="FileNewForm">File:New:Form...</Variable>
+		<!--To Assign Project to Item-->
+	<Variable Name="ToolsProjectAssign">Tools:Project:Assign...</Variable>
+		<!--To open Summary view-->
+	<Variable Name="WindowShowViewSummary">Window:Show View:Summary</Variable>	
+		<!--To unpack All Item Revisions with same find number-->
+	<Variable Name="ViewPackUnpackUnpackAll">View:Pack Unpack:Unpack All</Variable>
+		<!--To pack All Item Revisions with same find number-->
+	<Variable Name="ViewPackUnpackPackAll">View:Pack Unpack:Pack All</Variable>
+		<!--To open Details view-->
+	<Variable Name="WindowShowViewDetails">Window:Show View:Details</Variable>
+		<!--To open Effectivity Dilaog-->
+	<Variable Name="ToolsEffectivity">Tools:Effectivity</Variable>	
+		<!--To open Expand structure-->
+	<Variable Name="ViewExpand">View:Expand</Variable>		
+		<!--To remove item from structure-->
+	<Variable Name="EditRemove">Edit:Remove</Variable>
+		<!--To open About Teamcenter dialog-->
+	<Variable Name="HelpAbout">Help:About</Variable>	
+		<!--To create Variant Condition-->
+	<Variable Name="EditVariantCondition">Edit:Variant Condition...</Variable>
+		<!--To Expand All nodes in structure-->
+	<Variable Name="ViewExpandAll">View:Expand All</Variable>
+		<!--To Expand nodes in selected node in structure-->
+	<Variable Name="ViewExpandOptionsExpandBelow">View:Expand Options:Expand Below</Variable>
+		<!--Click on menu File-New-BOM View Revision...-->
+	<Variable Name="FileNewBOMViewRevision">File:New:BOM View Revision... </Variable>
+		<!--Click on menu File->SaveAs...->Item(Revision)...-->
+	 <Variable Name="FileSaveAsItemRevision">File:Save As...:Item(Revision)... </Variable>
+		<!--Click on menu Tools->Assign Participants...-->
+	 <Variable Name="ToolsAssignParticipants">Tools:Assign Participants...</Variable>
+		<!--To Open Baseline dialog-->
+	<Variable Name="ToolsBaseline">Tools:Baseline...</Variable>
+		<!--To Open reset perspective dialog-->
+	<Variable Name="WindowResetPerspective">Window:Reset Perspective.*</Variable>
+		<!--To Open set perspective dialog-->
+	<Variable Name="WindowOpenPerspectiveOther">Window:Open Perspective:Other.*</Variable>
+	<Variable Name="CATIALoadinCATIA">CATIA V5:Load in CATIA V5</Variable>
+	<Variable Name="CATIAConvertIntoJT">CATIA V5:Convert into JT file</Variable>
+	<Variable Name="CATIAExportAsReference">CATIA V5:Export as reference</Variable>	
+	<Variable Name="CATIACreateCATPartdatasetforselection">CATIA V5:Create CATPart dataset for selection</Variable>
+	<Variable Name="CATIACreateCATProductdatasetforselection">CATIA V5:Create CATProduct dataset for selection</Variable>
+	<Variable Name="CATIALoadForCompareInCATIA">CATIA V5:Load for compare in CATIA V5</Variable>
+	<Variable Name="CATIALoadForConsultingInCATIA">CATIA V5:Load for consulting in CATIA V5</Variable>
+	<Variable Name="CATIALoadUpdateSave">CATIA V5:Load, update, save</Variable>
+	<Variable Name="CATIACreateExportSpreadsheet">CATIA V5:Create export spreadsheet</Variable>
+	<Variable Name="CATIAExport">CATIA V5:Export</Variable>
+	<Variable Name="CATIAExportAsReference">CATIA V5:Export as reference</Variable>
+	<Variable Name="CATIAReturnToCATIA">CATIA V5:Return to CATIA V5</Variable>
+	<Variable Name="CATIAAboutIntegration">CATIA V5:About integration</Variable>
+	<Variable Name="CATIALoadAsCgr">CATIA V5:Load as cgr</Variable>
+	<Variable Name="CATIARemoveLinks">CATIA V5:Remove links</Variable>
+	<Variable Name="CATIABrowseMultiModelLinks">CATIA V5:Browse multi-models links</Variable>
+	<Variable Name="CreateASpreadSheetForDrawing">CATIA V5:Create a spreadsheet for drawing</Variable>
+	<Variable Name="CATIAExportDrawing">CATIA V5:Export drawing</Variable>
+	<Variable Name="CATIAModifySpreadsheetForOEM">CATIA V5:Modify Spreadsheet for OEM</Variable>
+		<!--To set view-->
+	<Variable Name="WindowShowViewOther">Window:Show View:Other...</Variable>
+		<!--Click on menu View -> Named References...-->
+	<Variable Name="ViewNamedReferences">View:Named References...</Variable>
+		<!--Click on menu Actions - > Perform-->
+	<Variable Name="ActionsPerform">Actions:Perform</Variable>
+		<!--Click on menu Edit->Insert Level-->
+	<Variable Name="EditInsertLevel">Edit:Insert Level</Variable>
+		<!--To open Change Ownership dialog to Change Ownership of selected Teamcenter object-->
+	<Variable Name="EditChangeOwnership">Edit:Change Ownership...</Variable>
+		<!--To publish a item to default ODS-->
+	<Variable Name="ToolsMultiSiteCollaborationPublishToDefaultODS">Tools:Multi-Site Collaboration:Publish:To Default ODS</Variable>
+		<!--Click on menu CATIA V5->Update assembly mass properties-->
+	<Variable Name="CATIAV5UpdateAssemblyMassProperties">CATIA V5:Update assembly mass properties</Variable>
+		<!--To Toggle Precise/Imprecise -->
+	<Variable Name="TogglePreciseImprecise">Edit:Toggle Precise/Imprecise</Variable>
+		<!--Click on menu Tools->Export->Objects To Excel-->
+	<Variable Name="ToolsExportObjectsToExcel">Tools:Export:Objects To Excel</Variable>	
+	<Variable Name="ToolsManageGlobalAlternates">Tools:Manage Global Alternates</Variable>	
+	<Variable Name="EditMassUpdate">Edit:Mass Update</Variable>
+		<!--To Create Snapshot-->	
+	<Variable Name="FileNewSnapshot">File:New:Snapshot</Variable>
+	<Variable Name="EditAdd">Edit:Add...</Variable>
+	<!--Click on menu Actions - > Assign-->
+	<Variable Name="ActionsAssign">Actions:Assign...</Variable>
+	<!--Click on menu Tools->Export->Remote...-->
+	<Variable Name="ToolsExportRemote">Tools:Export:Remote...</Variable>
+	<!--Click on menu Tools->Import->Remote...-->
+	<Variable Name="ToolsImportRemote">Tools:Import:Remote...</Variable>
+	<Variable Name="TranslationAdministratorConsoleALL">Translation:Administrator Console - ALL</Variable>
+</Environment>

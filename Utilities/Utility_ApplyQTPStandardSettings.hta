@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<TITLE>Apply Standard UFT Settings</TITLE>
+<HTA:APPLICATION ID="UFTSettings" 
+     APPLICATIONNAME="QTP\UFT Settings"
+     BORDER="thin"
+     SCROLL="no"
+     SINGLEINSTANCE="yes"
+     SYSMENU="yes"
+     WINDOWSTATE="normal"
+     CONTEXTMENU = "no" 
+	 VERSION = "1.0">
+</HEAD>
+<SCRIPT language="VBScript">
+
+Option Explicit
+
+Sub Window_onLoad
+    window.resizeTo 700,300
+End Sub
+
+Function Fn_Utility_ApplyQTPSettings()
+	'Declaring variables
+	Dim objQTPApp
+	Dim aFolders
+	Dim iCounter
+	
+	'Creating Quick Test application object
+	Set objQTPApp = CreateObject("QuickTest.Application")
+	'Launching QTP
+	objQTPApp.Launch
+	objQTPApp.Visible = false
+	'Setting java tree path separator
+	If FLD_JavaTreePathSeparator.value<>"" Then
+		objQTPApp.Options.Java.TreePathSeparator = FLD_JavaTreePathSeparator.value
+	End IF
+	'Setting folders path
+	If FLD_FoldersPath.value<>"" Then
+		objQTPApp.Folders.RemoveAll
+		aFolders=Split(FLD_FoldersPath.value,",")
+		For iCounter=0 to Ubound(aFolders)
+			objQTPApp.Folders.Add(aFolders(iCounter))
+		Next
+	End IF
+	'Setting test run iteration mode
+	If FLD_TestRunIterationMode.value<>"" Then
+		objQTPApp.Test.Settings.Run.IterationMode = FLD_TestRunIterationMode.value
+	End IF
+	'Setting object sync time out
+	If FLD_ObjectSyncTimeOut.value<>"" Then
+		objQTPApp.Test.Settings.Run.ObjectSyncTimeOut = FLD_ObjectSyncTimeOut.value * 1000
+	End IF
+	
+	'Quiting QTP application
+	objQTPApp.Quit
+	'Releasing Quick Test application object
+	Set objQTPApp =Nothing
+	
+	Msgbox "Successfully applied UFT\QTP standard settings"
+End Function
+'--------------------------------------------------------------------------
+'Close
+'--------------------------------------------------------------------------
+Sub Quit_onclick
+	Window.Close
+End Sub
+
+</SCRIPT>
+	<BODY bgcolor="FFFFE6">
+		<table width="100%" border="1" bordercolor="000000">
+			<tr width="100%">
+				<th width="100%" align="center" valign="middle" bgcolor="15317E" colspan=2><font size="5" face="Arial" color="FFFFFF">Apply Standard QTP\UFT Settings</th>
+			</tr>
+			<tr width="100%">
+				<th width="100%" align="left" valign="middle"><font size="2" face="Arial" color="000000">Java Tree Path Separator</th>
+				<td align="left" width="50%"><input type="text" name="FLD_JavaTreePathSeparator" size="50" size="100%"></td>
+			</tr>
+			<tr width="100%">
+				<th width="100%" align="left" valign="middle"><font size="2" face="Arial" color="000000">Folders Path ( User can pass multiple path seperated by Comma (,) )</th>
+				<td align="left" width="50%"><input type="text" name="FLD_FoldersPath" size="50" size="100%"></td>
+			</tr>
+			<tr width="100%">
+				<th width="100%" align="left" valign="middle"><font size="2" face="Arial" color="000000">Test Run Iteration Mode</th>
+				<td align="left" width="100%">
+					<select size="1" name="FLD_TestRunIterationMode" size="100%">
+						<option>Select one option......................</option>                        
+                        <option value="oneIteration">oneIteration</option>
+					</select></td>
+				</td>
+			</tr>
+			<tr width="100%">
+				<th width="100%" align="left" valign="middle"><font size="2" face="Arial" color="000000">Object Sync Time Out (In Seconds)</th>
+				<td align="left" width="50%"><input type="text" name="FLD_ObjectSyncTimeOut" size="50" size="100%"></td>
+			</tr>
+			<tr width="100%">
+				<td align="center" colspan=3>
+					<input style="width:100px;" id=runbutton  class="button" type="button" value="Apply" name="run_button" onClick="Fn_Utility_ApplyQTPSettings()">
+					<input style="width:100px;" type="button" value="Close" onClick="Quit_onclick">
+				</td>
+			</tr>			
+		</table>			
+	</BODY>
+</HTML>

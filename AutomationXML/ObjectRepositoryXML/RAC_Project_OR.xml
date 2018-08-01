@@ -1,0 +1,6 @@
+<Environment>
+	<Variable Name="jwnd_ProjectDefaultWindow">JavaWindow("jwnd_ProjectDefaultWindow")</Variable>
+	<Variable Name="jtree_ProjectsTree">JavaWindow("jwnd_ProjectDefaultWindow").JavaTree("jtree_ProjectsTree")</Variable>
+	<Variable Name="jtree_MemberSelection">JavaWindow("jwnd_ProjectDefaultWindow").JavaTree("jtree_MemberSelection")</Variable>
+	<Variable Name="jtree_SelectedMembers">JavaWindow("jwnd_ProjectDefaultWindow").JavaTree("jtree_SelectedMembers")</Variable>
+</Environment>	

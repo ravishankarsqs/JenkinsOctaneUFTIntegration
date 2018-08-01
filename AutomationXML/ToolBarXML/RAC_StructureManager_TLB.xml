@@ -1,0 +1,51 @@
+<Environment>
+	<Variable>
+	<!--To open Variant Condition dialog-->
+		<Name>EditTheVariantCondition</Name>
+		<Value>Edit the variant condition</Value>
+	</Variable>
+	<Variable>
+	<!--To save any assembly or structure-->
+		<Name>Savethecurrentcontent</Name>
+		<Value>Save the current contents (Ctrl+S)</Value>
+	</Variable>
+	<Variable>
+	<!--To open object in Lifecycle viewer-->
+		<Name>StartOpenInLifecycleVisualization</Name>
+		<Value>Start/Open In Lifecycle Visualization</Value>
+	</Variable>	
+	<Variable>
+	<!--To remove a selected line from structure-->
+		<Name>Removeline</Name>
+		<Value>Remove a line (Ctrl+R)</Value>
+	</Variable>
+	<Variable>
+	<!--To open Properties dialog-->
+		<Name>Displayspropertiesoftheselectedobject</Name>
+		<Value>Displays properties of the selected object (Alt+P)</Value>
+	</Variable>
+	<Variable>
+	<!--To split structure manager window into two-->
+		<Name>SplitsthewindowinTwo</Name>
+		<Value>Splits the window in two.</Value>
+	</Variable>
+	<Variable>
+	<!--To Remove the reference without deleting the object-->
+		<Name>RemoveTheReferenceWithoutDeletingTheObject</Name>
+		<Value>Remove the reference without deleting the object (Ctrl+R)</Value>
+	</Variable>	
+	<Variable>
+	<!--To Remove Design from Product-->
+		<Name>RemoveDesignfromProduct</Name>
+		<Value>Remove Design from Product</Value>
+	</Variable>
+	<Variable>
+	<!--To View the details of any revision rule, and set the current rule-->
+		<Name>ViewTheDetailsOfAnyRevisionRuleAndSetTheCurrentRule</Name>
+		<Value>View the details of any revision rule, and set the current rule</Value>
+	</Variable>
+	<Variable>
+		<Name>ShowHideDataPanel</Name>
+		<Value>Show/Hide Data Panel</Value>
+	</Variable>
+</Environment>

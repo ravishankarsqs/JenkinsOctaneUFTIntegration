@@ -1,0 +1,93 @@
+<Environment>
+	<!--Delete all the comments once the menu is found/implemented-->
+	<Variable>
+	<!--Send selected Teamcenter Object to Structure Manager-->
+		<Name>SendToStructureManager</Name>
+		<Value>Send To:Structure Manager</Value>
+	</Variable>
+	<Variable>
+	<!--Open Properties dialog-->
+		<Name>ViewProperties</Name>
+		<Value>View Properties</Value>
+	</Variable>
+	<Variable>
+	<!--To Refresh Teamcenter Window-->
+		<Name>Refresh</Name>
+		<Value>Refresh	F5</Value>
+	</Variable>
+	<Variable>
+	<!--CheckOut selected Teamcenter Object-->
+		<Name>CheckOut</Name>
+		<Value>Check-In/Out:Check Out...</Value>
+	</Variable>
+	<Variable>
+	<!--Cancel CheckOut operation on Checked Out Teamcenter Object-->
+		<Name>CancelCheckOut</Name>
+		<Value>Check-In/Out:Cancel Checkout...</Value>
+	</Variable>
+	<Variable>
+	<!--CheckIn  Checked Out Teamcenter Object-->
+		<Name>CheckIn</Name>
+		<Value>Check-In/Out:Check In...</Value>
+	</Variable>
+	<Variable>
+	<!--Revise selected Teamcenter Object's revision-->
+		<Name>Revise</Name>
+		<Value>Revise...</Value>
+	</Variable>
+	<Variable>
+	<!--Copy selected Teamcenter Object-->
+		<Name>Copy</Name>
+		<Value>Copy	Ctrl+C</Value>
+	</Variable>
+	<Variable>
+	<!--Paste Copied/clipboard Object under selected Teamcenter Object-->
+		<Name>Paste</Name>
+		<Value>Paste	Ctrl+V</Value>
+	</Variable>	
+	<Variable>
+	<!--Open Properties dialog -->
+		<Name>Properties</Name>
+		<Value>Properties	Alt+Enter</Value>
+	</Variable>
+	<Variable>
+	<!--Open Properties dialog -->
+		<Name>Properties@2</Name>
+		<Value>Properties</Value>
+	</Variable>
+	<Variable>
+	<!--Open Edit Properties dialog -->
+		<Name>EditProperties</Name>
+		<Value>Edit Properties</Value>
+	</Variable>
+	<Variable>
+	<!--Open Edit Properties dialog -->
+		<Name>DeriveChange</Name>
+		<Value>Derive Change...</Value>
+	</Variable>
+	<Variable>
+	<!--Send selected Teamcenter Object to My Teamcenter-->
+		<Name>SendToMyTeamcenter</Name>
+		<Value>Send To:My Teamcenter</Value>
+	</Variable>
+	<Variable>
+	<!--Open PropertiesOnRelation dialog-->
+		<Name>PropertiesOnRelation</Name>
+		<Value>Properties On Relation...</Value>
+	</Variable>		
+	<Variable>
+	<!--Open Summary dialog in BOM Table-->
+		<Name>OpenwithSummary</Name>
+		<Value>Open with:Summary</Value>
+	</Variable>
+	<Variable>
+	<!--Open context dialog by selecting item revision-->
+		<Name>NewChangeInContext</Name>
+		<Value>New Change in context...</Value>
+	</Variable>	
+	<Variable>
+	<!--Generate Report by selecting DA revision-->
+		<Name>GenerateReport</Name>
+		<Value>Generate Report</Value>
+	</Variable>	
+</Environment>

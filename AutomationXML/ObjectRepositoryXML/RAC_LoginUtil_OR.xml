@@ -1,0 +1,14 @@
+<Environment>
+	<Variable Name="wdlg_CommonWinDialog">Dialog("wdlg_CommonWinDialog")</Variable>
+	<Variable Name="jwnd_DefaultWindow">JavaWindow("jwnd_DefaultWindow")</Variable>
+	<Variable Name="jwnd_TeamcenterLogin">JavaWindow("jwnd_TeamcenterLogin")</Variable>
+	<Variable Name="jwnd_Exit">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_Exit")</Variable>	
+	<Variable Name="japt_JavaApplet">JavaWindow("jwnd_DefaultWindow").JavaApplet("japt_JavaApplet")</Variable>
+	<Variable Name="jwnd_TcDefaultApplet">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_TcDefaultApplet")</Variable>
+	<Variable Name="jwnd_AboutTeamcenter">JavaWindow("jwnd_DefaultWindow").JavaWindow("jwnd_AboutTeamcenter")</Variable>
+	<Variable Name="DLG_Notification">Dialog("DLG_Notification")</Variable>
+	<Variable Name="jwnd_TeamcenterSaveManager">JavaWindow("jwnd_TeamcenterSaveManager")</Variable>
+	<Variable Name="wbpge_SSOLogin">Browser("wbbrw_SSOLogin").Page("wbpge_SSOLogin")</Variable>
+	<Variable Name="wbbrw_TeamcenterSecurityServices">Browser("wbbrw_TeamcenterSecurityServices")</Variable>
+	<Variable Name="wbpge_TeamcenterSecurityAgent">Browser("wbbrw_TeamcenterSecurityAgent").Page("wbpge_TeamcenterSecurityAgent")</Variable>
+</Environment>

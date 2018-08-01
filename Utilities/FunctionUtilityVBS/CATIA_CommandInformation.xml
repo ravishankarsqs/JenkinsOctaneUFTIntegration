@@ -1,0 +1,10 @@
+<Environment>
+	<Variable>
+		<Name>CommandName</Name>
+		<Value>False</Value>
+	</Variable>
+	<Variable>
+		<Name>Result</Name>
+		<Value>False</Value>
+	</Variable>
+</Environment>

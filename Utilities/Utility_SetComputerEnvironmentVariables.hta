@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+<TITLE>Set Environment Variables</TITLE>
+<HTA:APPLICATION ID="SetComputerEnvironmentVariables" 
+     APPLICATIONNAME="Set Computer Environment Variables"
+     BORDER="thin"
+     SCROLL="no"
+     SINGLEINSTANCE="yes"
+     SYSMENU="yes"
+     WINDOWSTATE="normal"
+     CONTEXTMENU = "no" 
+	 VERSION = "1.0">
+</HEAD>
+<SCRIPT language="VBScript">
+
+Option Explicit
+
+Public bFlag
+
+Sub Window_onLoad
+    window.resizeTo 650,200
+End Sub
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -@Function Header Start
+'Function Name			 :	Fn_Utility_SetAutomationDir
+'
+'Function Description	 :	Function used to set Environment Variable "AutomationDir"
+'
+'Function Parameters	 :  NA
+'
+'Function Return Value	 : 	NA
+'
+'Wrapper Function	     : 	NA
+'
+'Function Pre-requisite	 :	NA
+'
+'Function Usage		     :  bReturn = Fn_Utility_SetAutomationDir()
+'                       
+'History			     :
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'	Developer Name				|	Date			|	Rev. No.   	|	 Reviewer			    |	Changes Done	
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'	Vrushali Dhembre		    |  17-Mar-2016	    |	 1.0		|	Sandeep Navghane	 	| 	Created
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -@Function Header End
+Public Function Fn_Utility_SetAutomationDir()
+	On Error Resume Next
+	'Declaring variables
+	Dim sUserVariableValue,sSystemWindowPath,sDriveName
+    Dim objWscriptShell,objShell,objFolder,objFolderItem,objUserVariables
+	
+	sDriveName   =  &H11 'CTRL key
+	'Creating Shell object
+	Set objShell = CreateObject("Shell.Application")	
+	Set objFolder = objShell.Namespace( sMY_COMPUTER )	
+	Set objFolderItem = objFolder.Self
+	sSystemWindowPath = objFolderItem.Path
+	
+    'Setting Environment Variable AutomationDir Folder 	
+	Set objFolder = objShell.BrowseForFolder(0,"Set AutomationDir Folder ->>",0,sSystemWindowPath) 
+	If typename(objFolder) <> "Nothing" Then
+		Set objFolderItem = objFolder.Self
+		sSystemWindowPath = objFolderItem.Path
+		sUserVarName = "AutomationDir"		
+		'Creating WscriptShell object
+		Set objWscriptShell =  CreateObject("WScript.Shell")
+		Set objUserVariables = objWscriptShell.Environment("USER")
+		'Setting AutomationDir Variable Value
+		objUserVariables("AutomationDir") = sSystemWindowPath
+		FLD_AutomationDir.value = sSystemWindowPath
+	End If
+	
+	'Releasing Objects
+	Set objUserVariables = Nothing
+	Set objWscriptShell = Nothing
+	Set objFolderItem = Nothing
+	Set objFolder = Nothing
+	Set objShell = Nothing
+End function
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -@Function Header Start
+'Function Name			 :	Fn_Utility_SetAndRestartFMSHOME
+'
+'Function Description	 :	Function used to set Environment Variable "FMS_HOME"
+'
+'Function Parameters	 :  NA
+'
+'Function Return Value	 : 	True \ False
+'
+'Wrapper Function	     : 	NA
+'
+'Function Pre-requisite	 :	NA
+'
+'Function Usage		     :  bReturn = Fn_Utility_SetAndRestartFMSHOME()
+'                       
+'History			     :
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'	Developer Name				|	Date			|	Rev. No.   	|	 Reviewer			    |	Changes Done	
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'	Vrushali Dhembre		    |  17-Mar-2016	    |	 1.0		|	Sandeep Navghane	 	| 	Created
+' - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -@Function Header End
+Public Function Fn_Utility_SetAndRestartFMSHOME()
+	'Declaring variables
+	Dim sDriveName,sFMSHomePath,sSystemWindowPath
+    Dim objWscriptShell,objShell,objFolder,objFolderItem,objUserVariables,objFSO
+	
+	sDriveName = "C:\" 
+	Fn_Utility_SetAndRestartFMSHOME=False
+	bFlag = True
+	
+	'Creating Shell Object
+	Set objShell = CreateObject("Shell.Application")
+	Set objFolder = objShell.Namespace(sDriveName)
+	Set objFolderItem = objFolder.Self
+	sSystemWindowPath = objFolderItem.Path
+	
+	Set objFolder = objShell.BrowseForFolder(0, "Set FMS_HOME ->>", 0, sSystemWindowPath) 
+	If Typename(objFolder) <> "Nothing" Then
+		Set objFolderItem = objFolder.Self
+		sSystemWindowPath = objFolderItem.Path
+		'Creating WscriptShell Object
+		Set objWscriptShell =  CreateObject("WScript.Shell")
+		Set objUserVariables = objWscriptShell.Environment("USER")		
+		'Setting FMS_HOME Variable Value
+		objUserVariables("FMS_HOME") = sSystemWindowPath
+		FLD_FMSHOME.value = sSystemWindowPath
+	End If
+	'Creating File System Object
+	Set objFSO = CreateObject("Scripting.FileSystemObject")	
+	'Retriving Parent Folder of entered FMS_HOME value 
+	If objFSO.FolderExists(objUserVariables("FMS_HOME")) Then			
+		sFMSHomePath = objFSO.GetParentFolderName(objUserVariables("FMS_HOME"))		
+	End If	
+	'Checking for given FMS_HOME is of active Teamcenter
+	If objFSO.FolderExists(sFMSHomePath & "\rac\plugins")=False Then
+		objWscriptShell.Popup  "Invalid FMS_HOME" , 2,"Invalid FMS_HOME !!"
+		bFlag = False
+		Exit function
+	End If
+	Fn_Utility_SetAndRestartFMSHOME=True
+
+	'Restart FMS_HOME
+	 objWscriptShell.run objUserVariables("FMS_HOME") &"\bin\fccstat.exe -restart"
+	
+	'Releasing Objects
+	Set objFSO =Nothing
+	Set objWscriptShell = Nothing
+	Set objUserVariables = Nothing
+	Set objFolderItem = Nothing
+	Set objFolder = Nothing
+	Set objShell = Nothing
+	
+End function
+'--------------------------------------------------------------------------
+'Close
+'--------------------------------------------------------------------------
+Sub Quit_onclick
+	Window.Close
+End Sub
+
+Sub message_onclick
+	If bFlag=True Then
+		Msgbox "Successfully set all computer environment variables"
+	Else
+		Msgbox "Fail to set all computer environment variables (Invalid FMS_HOME)"	
+	End If	
+End Sub
+
+</SCRIPT>
+	<BODY bgcolor="FFFFE6" >
+		<table width="100%" border="1" bordercolor="000000">
+			<tr width="100%">
+				<th width="100%" align="center" valign="middle" bgcolor="15317E" colspan=2><font size="5" face="Arial" color="FFFFFF">Set Computer Environment Variables</th>
+			</tr>
+			<tr width="100%">
+				<th width="100%" align="left" valign="middle"><font size="2" face="Arial" color="000000">Select Automation Dir ( Click to Select )</th>
+				<td align="left" width="50%"><input type="text" name="FLD_AutomationDir" size="50%" onclick="Fn_Utility_SetAutomationDir()"></td>
+			</tr>
+			<tr width="100%">
+				<th width="100%" align="left" valign="middle"><font size="2" face="Arial" color="000000">Select FMS_HOME ( Click to Select )</th>
+			    <td align="left" width="50%"><input type="text" name="FLD_FMSHOME" size="50%" onclick="Fn_Utility_SetAndRestartFMSHOME()"></td>
+			</tr>  		
+			<tr width="100%">
+				<td align="center" colspan=3>
+					<input style="width:100px;" id=runbutton  class="button" type="button" value="Set" name="run_button" onClick="message_onclick">
+					<input style="width:100px;" type="button" value="Close" onClick="Quit_onclick">
+				</td>
+			</tr>									
+		</table>
+	</BODY>
+</HTML>

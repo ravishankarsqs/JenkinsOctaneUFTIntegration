@@ -1,0 +1,9 @@
+<Environment>
+	<Variable Name="jwnd_SearchDefaultWindow">JavaWindow("jwnd_SearchDefaultWindow")</Variable>
+	<Variable Name="jdlg_QuickOpenResults">JavaWindow("jwnd_SearchDefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_QuickOpenResults")</Variable>
+	<Variable Name="jdlg_QuickOpenResults@2">JavaWindow("jwnd_SearchDefaultWindow").JavaApplet("japt_JavaApplet").JavaDialog("jdlg_QuickOpenResults") </Variable>
+	<Variable Name="jwnd_ChangeSearch">JavaWindow("jwnd_SearchDefaultWindow").JavaWindow("jwnd_ChangeSearch")</Variable>
+	<Variable Name="jtree_SearchResultTree">JavaWindow("jwnd_SearchDefaultWindow").JavaTree("jtree_SearchResultTree")</Variable>
+	<Variable Name="jdlg_NoAccessibleObjects">JavaWindow("jwnd_SearchDefaultWindow").JavaWindow("jwnd_TcDefaultApplet").JavaDialog("jdlg_NoAccessibleObjects")</Variable>
+	<Variable Name="wmnu_ContextMenu">JavaWindow("jwnd_SearchDefaultWindow").WinMenu("wmnu_ContextMenu")</Variable>
+</Environment>

@@ -1,0 +1,53 @@
+<Environment>
+	<!--To Open Cut dialog , to Cut selected object-->
+	<Variable Name="Cut">Cut (Ctrl+X)</Variable>
+	<!--To save any assembly or structure-->
+	<Variable Name="Save">Save (Ctrl+S)</Variable>
+	<!--To go back to previous perspective-->
+	<Variable Name="Back">Back</Variable>
+		<!--To paste clipboard object under selected node-->
+	<Variable Name="Paste">Paste a reference to the object contained in the clipboard (Ctrl+V)</Variable>
+	<!--To delete selected object -->
+	<Variable Name="Delete">Delete the selected object permanently (Delete)</Variable>
+	<!--To open Search View dialog -->
+	<Variable Name="OpenSearchView">Open Search View</Variable>
+	<!--To clear all search fields from search dialog -->
+	<Variable Name="Clearallsearchfields">Clear all search fields</Variable>
+	<!--To open Home folder -->
+	<Variable Name="OpenHomeFolder">Open Home folder</Variable>
+	<!--To open Menu List from Summary Tab -->
+	<Variable Name="ViewMenu">View Menu</Variable>
+	<!--To open Advanced Search dialog -->
+	<Variable Name="AdvancedSearch">Advanced Search</Variable>
+	<!--To open Properties dialog from Summary Tab -->
+	<Variable Name="MoreProperties">More Properties...</Variable>
+	<!--To copy selected Teamcenter object-->
+	<Variable Name="Copy">Copy the selection and put it on the clipboard (Ctrl+C)</Variable>
+	<!--To open Revise dialog from Summary tab-->
+	<Variable Name="Revise">Revise...</Variable>
+	<!--To open New Process dialog from Summary tab-->
+	<Variable Name="NewWorkflowProcess">New Workflow Process...</Variable>
+	<!--To open Save As dialog from Summary tab-->
+	<Variable Name="SaveAs">Save As</Variable>
+	<!--To execute search operation from Advance Search and display it's result in SearchResult Panel.-->
+	<Variable Name="ExecuteAndDisplaySearchResults">Executes the search and displays the results in search result view</Variable>
+	<!--To cance CheckOut Operation from Summary tab.-->
+	<Variable Name="CancelCheckout">Cancel Checkout...</Variable>
+	<!--To Refresh Teamcenter Window-->
+	<Variable Name="Refresh">Refresh the selected object (F5)</Variable>
+	<!--To Open My Worklist tab-->
+	<Variable Name="OpenWorklist">Open Worklist</Variable>	
+	<!--To Show Advance Properties form Properties Tab-->
+	<Variable Name="ShowAdvancedProperties">Show Advanced Properties</Variable>
+	<!--To Remove selected node from structure-->
+	<Variable Name="RemoveLine">Remove a line (Ctrl+R)</Variable>
+	<!--To open 'Change Search' dialog form Search Tab-->
+	<Variable Name="SelectASearch">Select a Search</Variable>
+	<!--To open CheckOut dialog from Summary tab.-->
+	<Variable Name="CheckOut">Check Out...</Variable>
+	<!--To route to NX application-->
+	<Variable Name="StartOpenInNX">Start/Open in NX</Variable>
+	<!--To Measure Inertia-->
+	<Variable Name="MeasureInertia">Measure Inertia</Variable>
+	<Variable Name="ActionsPerform">Perform Task</Variable>
+</Environment>

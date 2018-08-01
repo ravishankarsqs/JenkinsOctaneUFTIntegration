@@ -1,0 +1,161 @@
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'            Module Name             :   EBOM
+'
+'            Testcase Name           :   Create & Modify GET Document in Teamcenter
+'
+'            Test Objective          :   Create & Modify GET Document in Teamcenter
+'
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'            Developer Name          |       Date                |   Teamcenter Release      |  Reviewer
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'            Pallavi Jadhav          |       11-January-2017       |   Teamcenter 11.2          |   Pallavi Jadhav
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Option Explicit
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Variable Declaration
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Initialize Testcase
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+LoadAndRunAction "FMW_Setup\FMW_Setup_TestcaseInit","FMW_Setup_TestcaseInit", oneIteration
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 1
+'Description     : Login to Teamcenter with any of the following Roles:Engineer,Designer, Engineering Manager,Material Technical Advisor  Note: Only above roles can create a GET Document Itemt.
+'Expected result : Logged into Teamcenter Successfully..
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Login to Teamcenter with any of the following Roles:Engineer,Designer, Engineering Manager,Material Technical Advisor  Note: Only above roles can create a GET Document Itemt."
+GBL_STEP_EXPECTED_RESULT="Logged into Teamcenter Successfully.."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+
+'Launch Teamcenter
+LoadAndRunAction "RAC_LoginUtil\RAC_LoginUtil_ReuseTcSession","RAC_LoginUtil_ReuseTcSession",OneIteration,True,True,"",DataTable.Value("AutomationUserID","Global"),"","portalbat",""
+'Modify Group Role
+LoadAndRunAction "RAC_Common\RAC_Common_UserSessionSettingsOperations","RAC_Common_UserSessionSettingsOperations",OneIteration,"ModifySession",DataTable.Value("AutomationUserID","Global"),"",""
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 2
+'Description     : In the My Teamcenter perspective, Select the desired folder to create new GET Document.Create Document Item using File-> New-> Item Menu.
+'Expected result : New part dialog should be displayed
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="In the My Teamcenter perspective, Select the desired folder to create new GET Document.Create Document Item using File-> New-> Item Menu."
+GBL_STEP_EXPECTED_RESULT="New part dialog should be displayed"
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+
+' Set My Teamcenter Perspective.
+LoadAndRunAction "RAC_Common\RAC_Common_SetResetPerspective","RAC_Common_SetResetPerspective",OneIteration,GBL_PERSPECTIVE_MYTEAMCENTER,True,True
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 3
+'Description     : Select "GET Document" from the list. Click on Next Button.
+'Expected result : GET Document Item details window should be displayed.
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Select GET Document from the list. Click on Next Button."
+GBL_STEP_EXPECTED_RESULT="GET Document Item details window should be displayed."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 4
+'Description     : User enters Item id ( Acquired from Item ID tool from Control Card) in the ID field. Enter all the mandatory values : Name, IP Classifciation etc
+'Expected result : All mandatory fields should be populated.
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="User enters Item id ( Acquired from Item ID tool from Control Card) in the ID field. Enter all the mandatory values : Name, IP Classifciation etc"
+GBL_STEP_EXPECTED_RESULT="All mandatory fields should be populated."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 5
+'Description     : Click on Finish button to complete creation of GET Document item.
+'Expected result : GET Document item should be created in selected folder.
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Click on Finish button to complete creation of GET Document item."
+GBL_STEP_EXPECTED_RESULT="GET Document item should be created in selected folder."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+
+'Create Test case Folder
+LoadAndRunAction "RAC_Common\RAC_Common_CreateTestCaseFolder","RAC_Common_CreateTestCaseFolder",OneIteration,"","",""
+' Expand Test Case Folder 
+LoadAndRunAction "RAC_MyTeamcenter\RAC_MyTc_NavigationTreeOperations", "RAC_MyTc_NavigationTreeOperations", oneIteration, "Expand", GBL_TESTCASE_FOLDER_PATH,""
+'Select  Test Case Folder 
+LoadAndRunAction "RAC_MyTeamcenter\RAC_MyTc_NavigationTreeOperations", "RAC_MyTc_NavigationTreeOperations", oneIteration, "Select", GBL_TESTCASE_FOLDER_PATH,""
+'Create GET Document
+LoadAndRunAction "RAC_Common\RAC_Common_CreateItem","RAC_Common_CreateItem", OneIteration, "getitemautocreatewithallfields", Datatable.Value("ItemType"), "menu", "myteamcenter", ""
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 6
+'Description     : Search for the GET Document created in previous test scipt.
+'Expected result : GET Document selected and opened in new window
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Search for the GET Document created in previous test scipt."
+GBL_STEP_EXPECTED_RESULT="GET Document selected and opened in new window"
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+
+'Verify existance of GET Document
+LoadAndRunAction "RAC_MyTeamcenter\RAC_MyTc_NavigationTreeOperations", "RAC_MyTc_NavigationTreeOperations", oneIteration, "VerifyExist", GBL_TESTCASE_FOLDER_PATH & "~" & DataTable.Value("RACGETItemNode","Global"),""
+' Expand GET Document
+LoadAndRunAction "RAC_MyTeamcenter\RAC_MyTc_NavigationTreeOperations", "RAC_MyTc_NavigationTreeOperations", oneIteration, "Expand", GBL_TESTCASE_FOLDER_PATH &"~"& DataTable.Value("RACGETItemNode","Global"),""
+'Select GET Document 
+LoadAndRunAction "RAC_MyTeamcenter\RAC_MyTc_NavigationTreeOperations", "RAC_MyTc_NavigationTreeOperations", oneIteration, "Select", GBL_TESTCASE_FOLDER_PATH &"~"& DataTable.Value("RACGETItemNode","Global"),""
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 7
+'Description     : Select the GET Document and Open Summary Tab. Select GET Attribute Tab in Summary Tab window.
+'Expected result : GET Attribute tab should be displayed in Summary Tab window
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Select the GET Document and Open Summary Tab. Select GET Attribute Tab in Summary Tab window."
+GBL_STEP_EXPECTED_RESULT="GET Attribute tab should be displayed in Summary Tab window"
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 8
+'Description     : In the Bottom left, press check out the edit the GET properties of Item. I.e: Engineering Product Line, ECCN, ECCN Source, Objective Evidence, IP Classification, etc.
+'Expected result : All the attributes for item should be populated.
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="In the Bottom left, press check out the edit the GET properties of Item. I.e: Engineering Product Line, ECCN, ECCN Source, Objective Evidence, IP Classification, etc."
+GBL_STEP_EXPECTED_RESULT="All the attributes for item should be populated."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 9
+'Description     : To save the modified changes, Click on Check in.. button.
+'Expected result : Changes should be saved successfully.
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="To save the modified changes, Click on Check in.. button."
+GBL_STEP_EXPECTED_RESULT="Changes should be saved successfully."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+
+dictSummaryTabInfo.RemoveAll
+dictSummaryTabInfo("Objective Evidence") = Fn_FSOUtil_XMLFileOperations("getvalue","RAC_GETItemModifyAttributeValues_APL","ObjectiveEvidence","")
+dictSummaryTabInfo("ECCN") = Fn_FSOUtil_XMLFileOperations("getvalue","RAC_GETItemModifyAttributeValues_APL","ECCN","")
+dictSummaryTabInfo("ECCN Source") = Fn_FSOUtil_XMLFileOperations("getvalue","RAC_GETItemModifyAttributeValues_APL","ECCNSource","")
+dictSummaryTabInfo("Engineering Product Line") = Fn_FSOUtil_XMLFileOperations("getvalue","RAC_GETItemModifyAttributeValues_APL","EngineeringProductLine","")
+dictSummaryTabInfo("IP Classification") = Fn_FSOUtil_XMLFileOperations("getvalue","RAC_GETItemModifyAttributeValues_APL","IPClassification","")
+'Modify GET Document attributes
+LoadAndRunAction "RAC_Common\RAC_Common_SummaryTabOperations","RAC_Common_SummaryTabOperations",oneIteration,"ModifyGETItemAttributes","GET Attributes"
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 10
+'Description     : Click on Check In, to save all the changes.
+'Expected result : All changes should get updated
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Click on Check In, to save all the changes."
+GBL_STEP_EXPECTED_RESULT="All changes should get updated"
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+
+'Verify GET Document attributes
+LoadAndRunAction "RAC_Common\RAC_Common_SummaryTabOperations","RAC_Common_SummaryTabOperations",oneIteration,"VerifyGETItemAttributes","GET Attributes"
+
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Step No.        : Step 11
+'Description     : Logout from Teamcenter
+'Expected result : Logged out successfully.
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+GBL_STEP_DESCRIPTION="Logout from Teamcenter"
+GBL_STEP_EXPECTED_RESULT="Logged out successfully."
+Call Fn_LogUtil_PrintStepHeaderLog(GBL_STEP_NUMBER,GBL_STEP_DESCRIPTION,GBL_STEP_EXPECTED_RESULT)
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+'Exit From Test Case
+'- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+LoadAndRunAction"FMW_Setup\FMW_Setup_TestcaseExit","FMW_Setup_TestcaseExit", oneIteration,"RAC",True
+
+Call Fn_ExitTest()
+
+Function Fn_ExitTest()
+ ExitTest
+End Function

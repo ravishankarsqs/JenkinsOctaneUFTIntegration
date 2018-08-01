@@ -1,0 +1,1 @@
+﻿var __testDataSource={items:[{dataFilePath:'Default.xls',dataFileFormat:'excel',dataFileFolder:'C:\\CD\\Scripts\\TC_CreateItem\\TC_CreateItem\\Res2',namePairs:[]}]};

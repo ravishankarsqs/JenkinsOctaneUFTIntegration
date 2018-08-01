@@ -1,0 +1,6 @@
+<Environment>
+	<Variable Name="jwnd_ChangeManager">JavaWindow("jwnd_ChangeManager").JavaTree("jtree_NavigationTree")</Variable>
+</Environment>
+
+
+ 

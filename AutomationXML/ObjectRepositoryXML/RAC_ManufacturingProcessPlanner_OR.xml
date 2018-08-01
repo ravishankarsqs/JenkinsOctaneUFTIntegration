@@ -1,0 +1,34 @@
+<Environment>
+	<Variable>
+		<Name>jwnd_ManufacturingProcessPlanner</Name>
+		<Value>JavaWindow("jwnd_ManufacturingProcessPlanner")</Value>
+	</Variable>
+	<Variable>
+		<Name>japt_MPPApplet</Name>
+		<Value>JavaWindow("jwnd_ManufacturingProcessPlanner").JavaApplet("japt_MPPApplet")</Value>
+	</Variable>
+	<Variable>
+		<Name>jtbl_AttachmentsTreeTable</Name>
+		<Value>JavaWindow("jwnd_ManufacturingProcessPlanner").JavaApplet("japt_MPPApplet").JavaTable("jtbl_AttachmentsTreeTable")</Value>
+	</Variable>	
+	<Variable>
+		<Name>jtbl_CMEBOMTreeTable</Name>	
+		<Value>JavaWindow("jwnd_ManufacturingProcessPlanner").JavaApplet("japt_MPPApplet").JavaTable("jtbl_CMEBOMTreeTable")</Value>
+	</Variable>
+	<Variable>
+		<Name>wwnd_MPPWindow</Name>
+		<Value>Window("wwnd_MPPWindow")</Value>
+	</Variable>
+	<Variable>
+		<Name>wjapt_MPPApplet</Name>
+		<Value>Window("wwnd_MPPWindow").JavaApplet("japt_MPPApplet")</Value>
+	</Variable>
+	<Variable>
+		<Name>wjtbl_AttachmentsTreeTable</Name>
+		<Value>Window("wwnd_MPPWindow").JavaApplet("japt_MPPApplet").JavaTable("jtbl_AttachmentsTreeTable")</Value>
+	</Variable>	
+	<Variable>
+		<Name>wjtbl_CMEBOMTreeTable</Name>	
+		<Value>Window("wwnd_MPPWindow").JavaApplet("japt_MPPApplet").JavaTable("jtbl_CMEBOMTreeTable")</Value>
+	</Variable>
+</Environment>

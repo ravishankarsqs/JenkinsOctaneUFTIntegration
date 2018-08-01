@@ -1,0 +1,42 @@
+<Environment>
+	<!--To create new type of BOM View Revision of selected Revision-->
+	<Variable Name="FileNewBOMViewRevision">File:New:BOM View Revision...</Variable>
+	<!--To Open Compare dialog that compares two structure Manager windows-->
+	<Variable Name="ToolsCompare">Tools:Compare...</Variable>
+	<!--To check/uncheck 'Only Configure Root' option-->
+	<Variable Name="ToolsVariantsOnlyConfigureRoot">Tools:Variants:Only Configure Root</Variable>	
+	<!--To Open Save ItemRevision As dialog-->
+	<Variable Name="SaveAsItemRevision">File:Save As...:Item(Revision)...</Variable>	
+	<!--To check/uncheck 'Show Unconfigured By Occurrence Effectivity' option, this help to configure structure depending upon Occurrence Effectivity applied-->
+	<Variable Name="ShowUnconfiguredByOccurrenceEffectivity">View:Show Unconfigured By Occurrence Effectivity</Variable>	
+	<!--To check/uncheck 'Show Unconfigured Changes' option, this help to configure structure-->
+	<Variable Name="ViewShowUnconfiguredChangesges">View:Show Unconfigured Changes</Variable>	
+	<!--To open Duplicate dialog , to duplicate structre-->
+	<Variable Name="FileDuplicate">File:Duplicate...</Variable>		
+		<!--To Remove object from BOM table -->
+	<Variable Name="EditRemove">Edit:Remove</Variable>
+		<!--To Expand below structure-->
+	<Variable Name="ViewExpandBelow">View:Expand Below</Variable>
+		<!--To Expand below to specific level structure-->
+	<Variable Name="ViewExpandBelowToLevel">View:Expand Below...</Variable>
+		<!--To pack related items together-->
+	<Variable Name="ViewPackAll">View:Pack All</Variable>
+		<!--To un pack related items together-->
+	<Variable Name="ViewUnpackAll">View:Unpack All</Variable>
+	<!--To Remove Design from Product-->
+	<Variable Name="EditRemoveDesignFromProduct">Edit:Remove Design From Product</Variable>	
+	<!--To Remove Design from Product-->
+	<Variable Name="CATIAV5Createexportspreadsheet">CATIA V5:Create export spreadsheet</Variable>
+		<!--To Toggle on or off In-Context Mode -->
+	<Variable Name="EditTogglePreciseImprecise">Edit:Toggle Precise/Imprecise</Variable>
+	<!--To perform baseline operation-->
+	<Variable Name="ToolsBaseline">Tools:Baseline...</Variable>
+	<!--To perform update mass properties-->
+	<Variable Name="CATIAV5UpdateAssemblyMassProperties">CATIA V5:Update assembly mass properties</Variable>
+	<!--To perform View Set Closure Rule For Expansion operation-->
+	<Variable Name="ToolsViewSetClosureRuleForExpansion">Tools:View/Set Closure Rule for Expansion</Variable>
+	<!--To Tools:Revision Rule:View/Set Current operation-->
+	<Variable Name="ToolsRevisionRuleViewSetCurrent">Tools:Revision Rule:View/Set Current</Variable>
+	<!--To Tools:Revision Rule:View/Set Current operation-->
+	<Variable Name="ToolClearCompare">Tools:Clear Compare</Variable>	
+</Environment>

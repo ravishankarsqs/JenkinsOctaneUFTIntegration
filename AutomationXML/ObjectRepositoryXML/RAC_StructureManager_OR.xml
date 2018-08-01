@@ -1,0 +1,29 @@
+<Environment>
+	<Variable Name="jwnd_StructureManager">JavaWindow("jwnd_StructureManager")</Variable>
+	<Variable Name="japt_PSEApplet">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet")</Variable>
+	<Variable Name="jtbl_BOMTable">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaTable("jtbl_BOMTable")</Variable>	
+	<Variable Name="jdlg_ExpandBelow">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_ExpandBelow")</Variable>
+	<Variable Name="jdlg_ExpandBelow@2">JavaWindow("jwnd_StructureManager").JavaWindow("jwnd_PSEWindow").JavaDialog("jdlg_ExpandBelow")</Variable>
+	<Variable Name="wmnu_ContextMenu">JavaWindow("jwnd_StructureManager").WinMenu("wmnu_ContextMenu")</Variable>
+	<Variable Name="jdlg_Remove">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_Remove")</Variable>	
+	<Variable Name="jdlg_Replace">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_Replace")</Variable>
+	<Variable Name="jdlg_OpenByName">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_OpenByName")</Variable>	
+	<Variable Name="jdlg_ExpandToLevel">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_ExpandToLevel")</Variable>
+	<Variable Name="jdlg_RemoveDesignFromProduct">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_RemoveDesignFromProduct")</Variable>
+	<Variable Name="jdlg_Note">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_Note")</Variable>	
+	<Variable Name="jdlg_Baseline">JavaWindow("jwnd_DefaultWindow").JavaApplet("japt_JavaApplet").JavaDialog("jdlg_Baseline")</Variable>	
+	<Variable Name="jwnd_Information">JavaWindow("jwnd_StructureManager").JavaWindow("jwnd_Information")</Variable>
+	<Variable Name="jwnd_ViewSetClosureRuleForExpansion">JavaWindow("jwnd_StructureManager").JavaWindow("jwnd_ViewSetClosureRuleForExpansion")</Variable>
+	<Variable Name="jdlg_ViewSetCurrentRevisionRule">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_ViewSetCurrentRevisionRule")</Variable>	
+	<Variable Name="jtbl_FrozenColumnTable">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaTable("jtbl_FrozenColumnTable")</Variable>	
+	<Variable Name="jdlg_BOMCompare">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_BOMCompare")</Variable>
+	<Variable Name="jtbl_AttachmentsTable">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaTable("jtbl_AttachmentsTable")</Variable>
+	<Variable Name="jobj_CanvasBean">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaObject("jobj_CanvasBean")</Variable>
+	<Variable Name="jtab_DataPanel">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaTab("jtab_DataPanel")</Variable>
+	<Variable Name="jdlg_CapturingImage">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_CapturingImage")</Variable>
+	<Variable Name="jdlg_Add">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_Add")</Variable>
+	<Variable Name="jdlg_ListSubstitutes">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_ListSubstitutes")</Variable>
+	<Variable Name="jdlg_FindInDisplay">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_FindInDisplay")</Variable>
+	<Variable Name="jdlg_CreateSnapshot">JavaWindow("jwnd_StructureManager").JavaApplet("japt_PSEApplet").JavaDialog("jdlg_CreateSnapshot")</Variable>
+</Environment>
+
